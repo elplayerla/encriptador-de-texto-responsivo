@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Encriptador de texto</title>
+        <link rel="shortcut icon" href="imagenes/icon.webp" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="body.css">
+        <link rel="stylesheet" href="css/logo.css">
+        <link rel="stylesheet" href="css/textarea.css">
+        <link rel="stylesheet" href="css/advertencia/advertencia.css">
+        <link rel="stylesheet" href="css/advertencia/boton_encriptar.css">
+        <link rel="stylesheet" href="css/advertencia/boton_desencriptar.css">
+        <link rel="stylesheet" href="css/area-resultado/muñeco.css">
+        <link rel="stylesheet" href="css/area-resultado/textos.css">
+        <link rel="stylesheet" href="css/area-resultado/resultado.css">
+        <link rel="stylesheet" href="css/area-resultado/boton-copiar.css">
+        <link rel="stylesheet" href="css/area-resultado/area-resultado.css">
+        <link rel="stylesheet" href="css/footer.css">
+    </head>
+
+    <body>
+
+        <div class="logo">
+            <img src="imagenes/logo.svg">
+        </div>
+
+
+        <section class="advertencia-y-botones">
+            <textarea id="texto-entrada" name="texto" placeholder="Ingrese el texto aquí" required pattern="^[a-z ]*$" oninput="validarTexto()"></textarea>
+            <div id="advertencia" class="advertencia-y-botones__advertencia">
+                <img id="icono" src="imagenes/bi_exclamation-circle-fill.svg" alt="Signo de exclamación">
+                <p id="error">Solo letras minúsculas y sin acentos</p>
+            </div>
+    
+            <div class="advertencia-y-botones__botones">
+                <button class="boton_encriptar" onclick="encriptar()">Encriptar</button>
+                <button class="boton_desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="area-resultado" id="area-resultado">
+            <div id="area-resultado__elementos-ocultar">
+                <img src="imagenes/Muñeco.svg" class="area-resultado__elementos-ocultar__muñeco" alt="muñeco">
+                <div class="area-resultado__elementos-ocultar__textos">
+                    <p class="area-resultado__elementos-ocultar__textos__texto1">Ningún mensaje fue encontrado</p>
+                    <p class="area-resultado__elementos-ocultar__textos__texto2">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </div>
+
+            <div class="area-resultado__resultado">
+                <textarea name="texto_resultado" id="resultado" disabled></textarea>
+                <button class="area-resultado__boton-copiar" id="copiar" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
+
+    </body>
+
+    <footer>
+        <p>Brayan Sánchez©</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</html>

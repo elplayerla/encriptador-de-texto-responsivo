@@ -1,0 +1,50 @@
+textarea {
+    background-color: rgba(0, 0, 0, 0);
+	border: none;
+    resize: none;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    left: 120px;
+    top: 120px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    /* identical to box height, or 48px */
+
+    /* Dark blue/dark-blue-300 */
+    color: #0A3871;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: darkblue;
+    opacity: 100%;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: darkblue;
+    opacity: 100%;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: darkblue;
+    opacity: 100%;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: darkblue;
+    opacity: 100%;
+}
+
+/* Código Responsivo Mobile */
+@media (max-width:768px) {
+    #texto-entrada {
+        display: flex;
+        width: 80%;
+        height: auto;
+        max-height: 25%;
+        left: 40px;
+        font-size: 25px;
+        top: 80px;
+    }
+}

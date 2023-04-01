@@ -1,0 +1,40 @@
+.area-resultado__boton-copiar{
+    /* Auto layout */
+    display: none;
+    padding: 24px;
+    padding-left: 37%;
+    width: 90%;
+    height: 10%;
+    margin-top: 20px;
+    margin-left: 5%;
+    
+    /* Light gray */
+    background: #FFFFFF;
+    
+    /* Dark blue/dark-blue-300 */
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+    /* Text */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    /* Dark blue/dark-blue-300 */
+    color: #0A3871;
+}
+
+/* Código Responsivo Mobile */
+@media (max-width:768px) {
+    .area-resultado__boton-copiar{
+        /* Auto layout */
+        padding-top: 5px;
+        width: 90%;
+        height: 10%;
+        margin-top: 1%;
+        margin-left: 5%;
+    }
+}
